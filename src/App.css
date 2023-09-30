@@ -404,11 +404,32 @@ display: flex;
     }
    
    
-    .movie-container section{
-      margin: 0 20px;
-    }
-    #root,body{
-      height: 100%;
-    }
+   
     
     }
+    @media screen and (max-width: 400px) {
+      .movie-details {
+       
+        width: 300px;
+      
+       
+      }
+    
+      
+      .movie-description {
+        width: 300px;
+        
+        max-width: 300px;
+        
+      }
+   
+   
+      .movie-title{
+        font-size: 30px;
+      }
+      .movie-description{
+        font-size: 12px;
+      }
+     
+ 
+      }
