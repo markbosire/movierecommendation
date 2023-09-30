@@ -1,0 +1,381 @@
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_rgbold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'adelle_rgregular';
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body{
+	font-family: 'proxima_nova_rgregular';
+ 
+}
+
+.selectors,.movieSelector{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+  width: 100%;
+  margin: 10px 0;
+
+}
+/* App.css */
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.movieSelector div{
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movieSelector div:hover,.active,.movie-trailer{
+  border: 1px solid #0e0e!important;
+  color: #0e0e;
+}
+.movie-trailer{
+  cursor: pointer;
+  margin-top: 20px;
+
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.movie-trailer:hover{
+  border-color: #fff!important;
+  color: #fff;
+}
+
+.movieSelector div p{
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-container {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+
+  margin-bottom: 10px;
+}
+.fullHeight{
+  height: 100%;
+  padding: 50px 0;
+}
+.st{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+.loading{
+  height: 80vh;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+
+  background-color: #0000;
+}
+option{
+  background-color: #000 ! important; 
+}
+option:hover{
+  background-color: #fff;
+  color: #000;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #fff;
+  
+  background-color: #222;
+  height: 100vh;
+ 
+}
+
+
+.movie-container {
+  
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+
+
+}
+.movie-container section {
+display: flex;
+ margin: 80px 0;
+
+}
+
+.movie-poster {
+  margin-right: 200px;
+  height: 600px;
+  width: 400px;
+  border-radius: 20%; /* Adjust border radius as needed */
+}
+.movie-poster>img{
+  border-radius: 20px; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.movie-details {
+  align-items: flex-start;
+  width: 600px;
+
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+ height: 100%;
+}
+
+.movie-title {
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.movie-description {
+  width: 600px;
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.tag-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-radius: 20px; /* Adjust border radius as needed */
+}
+
+.tag {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #0000; /* Background color for tags */
+  padding: 5px 10px;
+  border-radius: 40px; /* Adjust border radius as needed */
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+}
+
+.movie-year {
+  margin-right: 10px;
+}
+
+.movie-rating {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+@keyframes ldio-67vo9x8f3d-o {
+    0%    { opacity: 1; transform: translate(0 0) }
+   49.99% { opacity: 1; transform: translate(40px,0) }
+   50%    { opacity: 0; transform: translate(40px,0) }
+  100%    { opacity: 0; transform: translate(0,0) }
+}
+@keyframes ldio-67vo9x8f3d {
+    0% { transform: translate(0,0) }
+   50% { transform: translate(40px,0) }
+  100% { transform: translate(0,0) }
+}
+.ldio-67vo9x8f3d div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 30px;
+  left: 10px;
+}
+.ldio-67vo9x8f3d div:nth-child(1) {
+  background: #fff;
+  animation: ldio-67vo9x8f3d 1s linear infinite;
+  animation-delay: -0.5s;
+}
+.ldio-67vo9x8f3d div:nth-child(2) {
+  background: #00ee00;
+  animation: ldio-67vo9x8f3d 1s linear infinite;
+  animation-delay: 0s;
+}
+.ldio-67vo9x8f3d div:nth-child(3) {
+  background: #fff;
+  animation: ldio-67vo9x8f3d-o 1s linear infinite;
+  animation-delay: -0.5s;
+}
+.loadingio-spinner-dual-ball-8b5q70g0vmv {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-67vo9x8f3d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.44);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-67vo9x8f3d div { box-sizing: content-box; }
+/* generated by https://loading.io/ */
+
+
+
+@media screen and (max-width: 1300px) {
+  .movie-info p{
+    font-size: 14px;
+   
+   
+  }
+  .movie-details {
+   
+    width: 450px;
+  
+   
+  }
+  
+
+  
+  .movie-description {
+    width: 450px;
+    
+    max-width: 450px;
+    
+  }
+
+.movie-title{
+  font-size: 30px;
+}
+.movie-description{
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 1080px) {
+  .movie-container section{
+    margin: 40px 0;
+  }
+  .movie-poster{
+    margin-right: 100px;
+    height: 450px;
+    width: 300px;
+
+  }
+}
+@media screen and (max-width: 900px) {
+  .loading{
+    height: 90vh;}
+
+  body{
+  
+    overflow-y: scroll;
+  }
+  .movie-container section{
+    flex-direction: column;
+   
+  }
+  .movie-poster{
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .movie-details {
+   
+    width: 500px;
+  
+   
+  }
+  .movie-poster{
+    height: 600px;
+  }
+
+  
+  .movie-description {
+    width: 500px;
+    
+    max-width: 500px;
+    
+  }
+  .fullHeight{
+    padding: 20px 0;
+  }
+  .movie-title{
+    font-size: 45px;
+  }
+  .movie-description{
+    font-size: 20px;
+  }
+ 
+ 
+  .movie-container section{
+    margin: 0 20px;
+  }
+  #root,body{
+    height: 100%;
+  }
+  
+  }
