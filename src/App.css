@@ -413,8 +413,13 @@ display: flex;
    
     
     }
-    @media screen and (max-width: 400px) {
-	
+   @media screen and (max-width: 400px) {
+     
+      .movie-container{
+        display: block;
+     
+        justify-self: normal;
+      }
       .movie-details {
        
         width: 300px;
