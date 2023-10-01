@@ -101,7 +101,7 @@ body{
   margin-bottom: 10px;
 }
 .fullHeight{
-  height: 100%;
+ 
   padding: 50px 0;
 }
 .st{
@@ -153,7 +153,7 @@ body{
 .movie-container {
   
 
-  height: 100%;
+
   width: 100%;
   display: flex;
 
@@ -390,11 +390,13 @@ height: auto;
     margin: 0 20px;
   }
   .background-image{
-    height: 100vh;
+    height: 100%;
+   
+    background-color: #000;
   }
-  #root,body{
-    height: 100vh!important;
-    overflow-y: hidden;
+  #root,body,html{
+    height: 100%;
+    overflow-y: auto;
   }
   
   }
