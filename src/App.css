@@ -41,9 +41,13 @@ body{
   justify-content: center;
  
   width: 100%;
-  margin: 10px 0;
+  
 
 }
+.selectors{
+  padding: 20px 0;
+}
+
 /* App.css */
 .background-image {
   width: 100%;
@@ -100,10 +104,7 @@ body{
 
   margin-bottom: 10px;
 }
-.fullHeight{
- 
-  padding: 50px 0;
-}
+
 .st{
   width: 100vw;
   display: flex;
