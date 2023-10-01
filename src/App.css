@@ -352,6 +352,7 @@ height: auto;
   }
 }
 @media screen and (max-width: 600px) {
+	 
   .movie-details {
    
     width: 500px;
@@ -391,6 +392,7 @@ height: auto;
     margin: 0 20px;
   }
   .background-image{
+	   min-height: 100vh;
     height: auto;
    
     background-color: #000;
